@@ -137,7 +137,7 @@ public class VarastoTest {
     public void merkkijonoEsitysOikea() {
         varasto.lisaaVarastoon(8);
 
-        assertEquals("saldo = 8.0, vielä tilaa 2.0", varasto.toString());
+        assertEquals("saldo = 10.0, vielä tilaa 2.0", varasto.toString());
     }
 
 }
