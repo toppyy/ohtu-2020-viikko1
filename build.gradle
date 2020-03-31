@@ -6,6 +6,11 @@
  * user guide available at https://guides.gradle.org/creating-new-gradle-builds/
  */
 
+plugins {
+    id 'checkstyle'
+}
+
+
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
@@ -18,6 +23,8 @@ repositories {
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
 }
+
+
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
@@ -51,3 +58,4 @@ jacocoTestReport {
         }))
     }
 }
+
